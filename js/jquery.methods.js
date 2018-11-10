@@ -46,7 +46,7 @@
 			if(num>=2000){
 				return Math.floor(num/1000) +'K';
 			}
-			return num;
+			return 0;
 		},
 		 tipsBox: function (options) {
              options = $.extend({
