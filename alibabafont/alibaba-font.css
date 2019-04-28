@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'AlibabaSans';
+    src: url('AlibabaSans-Regular.otf');
+   font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'AlibabaSans-Bold';
+    src: url('AlibabaSans-Bold.otf');
+   font-weight: bold;
+    font-style: bold;
+  }
+
+@font-face {
+    font-family: 'AlibabaPuHuiTi';
+    src: url('Alibaba-PuHuiTi-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'AlibabaPuHuiTi-Bold';
+    src: url('Alibaba-PuHuiTi-Bold.ttf') format("truetype");
+    font-weight: bold;
+    font-style: bold;
+  }
