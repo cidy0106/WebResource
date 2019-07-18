@@ -1,5 +1,5 @@
 /*!
- * Jquery Methods v.1.0
+ * Jquery Methods v.1.0.1
  * https://github.com/cidy0106/WebResource/js/jquery.methods.js
  *
  * Copyright 2018 Cidy0106#gmail.com
@@ -86,7 +86,7 @@
          getQuery:function(search,name){
               var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
               var r = search.substr(1).match(reg);
-              if(r!=null)return  unescape(r[2]); return null;
+              if(r!=null)return  decodeURIComponent(r[2]); return null;
          },
 		 utf16to8 : function(str) {
 			var out, i, len, c;
