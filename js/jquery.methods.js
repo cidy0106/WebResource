@@ -145,6 +145,22 @@
 				}
 			}
 			return ret.join('');
-		}
+		},
+                getCache:function(key){
+				if(window.localStorage){
+					return JSON.parse(window.localStorage.getItem(key));
+				}else if(window.sessionStorage){
+					return JSON.parse(window.sessionStorage.getItem(key));
+				}else{
+					return null;
+				}
+			},
+			setCache:function(key,val){
+				if(window.localStorage){
+					window.localStorage.setItem(key,JSON.stringify(val));
+				}else if(window.sessionStorage){
+					window.sessionStorage.setItem(key,JSON.stringify(val));
+				}
+			}
 	});
 })(jQuery);
