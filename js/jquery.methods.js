@@ -1,5 +1,5 @@
 /*!
- * Jquery Methods v.1.0.1
+ * Jquery Methods
  * https://github.com/cidy0106/WebResource/js/jquery.methods.js
  *
  * Copyright 2018 Cidy0106#gmail.com
