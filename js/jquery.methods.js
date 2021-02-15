@@ -147,15 +147,26 @@
 			return ret.join('');
 		},
                 getCache:function(key){
+				var val;
 				if(window.localStorage){
-					return JSON.parse(window.localStorage.getItem(key));
+					val=window.localStorage.getItem(key);
 				}else if(window.sessionStorage){
-					return JSON.parse(window.sessionStorage.getItem(key));
+					val=window.sessionStorage.getItem(key);
 				}else{
 					return null;
 				}
+				if(typeof val === 'undefined'){
+					return null;
+				}
+				return JSON.parse(val);
 			},
 			setCache:function(key,val){
+				if(typeof key === 'undefined'){
+					return;
+				}
+				if(typeof val === 'undefined'){
+					val='';
+				}
 				if(window.localStorage){
 					window.localStorage.setItem(key,JSON.stringify(val));
 				}else if(window.sessionStorage){
